@@ -187,7 +187,7 @@ header nav:hover  ul {
 .landing-section{
     background-color: var(--bgColor);
     height: calc(100vh - 80px);
-    background: url(/imgs/mountain.jpg) var(--bgColor);
+    background: url(..//imgs/mountain.jpg) var(--bgColor);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
