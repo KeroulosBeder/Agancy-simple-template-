@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>training grid test</title>
+    <!--------- display gird 
+    ----------- dispay : inline-gird ;
+    ----------- grid-template-columns => number of columns in grid system => [px,repeat,%,fr,auto,Mix]
+    ----------- grid-template-rows => number of rows in grid system => [px,repeat,%,fr,auto]
+    ----------- row-gap,column-gap,shorthand=> gap:[row],[column] ; make margins in rows and columns => [px]
+    ----------- align-content => horizel alignments => up & down 
+    ----------- justify-content =>  vertical alignments => left and right 
+    ----------- align-items => in grid system =>  
+    -----------
+    -----------
+    -->
+    
+    <style>
+
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+
+     main.container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 5% 90% 5%;
+        grid-template-areas: "logo logo nav nav nav nav nav nav nav nav" "side side con con con con con con con con" "foot foot foot foot foot foot foot foot foot foot";
+     }
+     h2{
+        grid-area: logo;
+        background-color: lightgoldenrodyellow;
+        text-align: center;
+     }
+     ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+     
+        height: 100%;
+     }
+     li{
+        display: block;
+        
+     }
+     nav{
+        grid-area: nav;
+        background-color: lightgreen;
+        
+     }
+
+     aside{
+        background-color: lightskyblue;
+        grid-area: side;
+     }
+     section{
+        grid-area: con;
+        background-color: lightsalmon;
+     }
+     footer{
+        grid-area: foot;
+        background-color: lightslategray;
+     }
+
+    </style>
+</head>
+<body>
+    
+    
+    
+
+    <main class="container">
+        <h2>Keorulos</h2>
+        <nav>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>services</li>
+        </ul>
+    </nav>
+    <aside>side bar</aside>
+    <section>content</section>
+    <footer>footer</footer>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+/* .parent{
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(3,auto);
+   
+    justify-content: space-evenly;
+    align-content: space-between;
+    
+
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+*/ -->
+
+
+
+
+<!-- the trainning  -->
+
+<!-- <div class="parent">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div> -->
